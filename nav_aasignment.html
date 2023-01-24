@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .left-logo {
+            padding: 20px;
+        }
+
+        .flex {
+            display: flex;
+            flex: content;
+            /* gap: 20px; */
+            justify-content: space-between;
+            background-color: blue;
+            align-items: center;
+        }
+
+        .flex .right-nav {
+            padding: 20px;
+            align-items: center;
+            color: rgb(68, 21, 21);
+        }
+
+        .flex .right-nav label {
+            padding: 20px;
+            color: white;
+        }
+
+        .flex .right-nav .showMenu {
+            position: relative;
+        }
+
+        .flex .right-nav .menus {
+            display: none;
+            position: absolute;
+            top: 45px;
+            left: 0;
+        }
+
+        .flex .right-nav .showMenu:hover {
+            background-color: darkblue;
+            position: relative;
+            transition: .5s ease all;
+        }
+
+        .flex .right-nav .showMenu:hover .menus {
+            display: block;
+            background-color: blue;
+            width: 120px;
+            height: auto;
+            text-align: center;
+        }
+
+        .flex .right-nav .more-menus {
+            display: none;
+            position: absolute;
+            top: 58px;
+            left: 120px;
+            background-color: blue;
+
+        }
+
+        .flex .right-nav .showMenu .show-more-menu:hover .more-menus {
+            display: block;
+            height: auto;
+            width: 120px;
+        }
+        button {
+            height: 30px;
+            width: 80px;
+        }
+        .name {
+            text-align: center;
+            height: auto;
+            width: auto;
+            background-color: yellowgreen;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="left-logo">
+            <a href=""><span class="fa-sharp fa-solid fa-image"></span>logo</a>
+        </div>
+        <div class="right-nav">
+            <label for="">Home</label>
+            <label for="">About</label>
+            <label href="" class="showMenu">Services <span class="fa-solid fa-angle-down"></span>
+                <div class="menus">
+                    <label for="">Web Design</label>
+                    <hr>
+                    <label for="">Marketing</label>
+                    <hr>
+                    <label for="">WordPress</label>
+                    <hr>
+                    <label for="" class="show-more-menu">More <span class="fa-solid fa-angle-right"></span>
+                        <div class="more-menus">
+                            <label for="">HTML</label>
+                            <hr>
+                            <label for="">CSS</label>
+                            <hr>
+                            <label for="">JavaScript</label>
+                            <hr>
+                            <label for="">JQuery</label>
+                            <hr>
+                        </div>
+                    </label>
+                </div>
+            </label>
+            <label for="">Blogs</label>
+            <label for="">Contact</label>
+            <button>Login</button>
+        </div>
+    </div>
+    <div class="name"><h3>Tahid</h3></div>
+</body>
+
+</html>
